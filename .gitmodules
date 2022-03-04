@@ -1,0 +1,10 @@
+[submodule "thirdparty/pybind11"]
+	path = thirdparty/pybind11
+	url = https://github.com/pybind/pybind11.git
+	branch = stable
+[submodule "thirdparty/pybind11_opencv_numpy"]
+	path = thirdparty/pybind11_opencv_numpy
+	url = https://github.com/edmBernard/pybind11_opencv_numpy.git
+[submodule "thirdparty/fbow"]
+	path = thirdparty/fbow
+	url = https://github.com/rmsalinas/fbow.git
