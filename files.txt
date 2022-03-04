@@ -1,0 +1,10 @@
+/usr/local/lib/python3.9/site-packages/cmake_example-0.0.1-py3.9-macosx-11-x86_64.egg/cmake_example.cpython-39-darwin.so
+/usr/local/lib/python3.9/site-packages/cmake_example-0.0.1-py3.9-macosx-11-x86_64.egg/cmake_example.py
+/usr/local/lib/python3.9/site-packages/cmake_example-0.0.1-py3.9-macosx-11-x86_64.egg/EGG-INFO/PKG-INFO
+/usr/local/lib/python3.9/site-packages/cmake_example-0.0.1-py3.9-macosx-11-x86_64.egg/EGG-INFO/not-zip-safe
+/usr/local/lib/python3.9/site-packages/cmake_example-0.0.1-py3.9-macosx-11-x86_64.egg/EGG-INFO/SOURCES.txt
+/usr/local/lib/python3.9/site-packages/cmake_example-0.0.1-py3.9-macosx-11-x86_64.egg/EGG-INFO/requires.txt
+/usr/local/lib/python3.9/site-packages/cmake_example-0.0.1-py3.9-macosx-11-x86_64.egg/EGG-INFO/native_libs.txt
+/usr/local/lib/python3.9/site-packages/cmake_example-0.0.1-py3.9-macosx-11-x86_64.egg/EGG-INFO/top_level.txt
+/usr/local/lib/python3.9/site-packages/cmake_example-0.0.1-py3.9-macosx-11-x86_64.egg/EGG-INFO/dependency_links.txt
+/usr/local/lib/python3.9/site-packages/cmake_example-0.0.1-py3.9-macosx-11-x86_64.egg/__pycache__/cmake_example.cpython-39.pyc
