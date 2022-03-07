@@ -55,14 +55,14 @@ if (UNIX)
   ${PYTHON_INCLUDE_DIRS}
   ${NUMPY_INCLUDES}
   ${fbow_INCLUDE_DIRS}/fbow
-  lib/)
+ )
 else()
   INCLUDE_DIRECTORIES(
   ${OpenCV_INCLUDE_DIRS}
   ${PYTHON_INCLUDE_DIRS}
   ${NUMPY_INCLUDES}
   ${fbow_INCLUDE_DIRS}/fbow
-  lib/)
+ )
 endif()
 
 
@@ -74,4 +74,4 @@ include_directories("thirdparty/pybind11_opencv_numpy")
 
 pybind11_add_module(pyfbow "src/fbow_wrapper.cpp" "./thirdparty/pybind11_opencv_numpy/ndarray_converter.cpp")
 target_link_libraries(pyfbow PRIVATE 
-    ${OpenCV_LIBRARIES} ${PYTHON_LIBRARIES}   ${fbow_LIBS})
+    ${OpenCV_LIBRARIES}    ${fbow_LIBS})
