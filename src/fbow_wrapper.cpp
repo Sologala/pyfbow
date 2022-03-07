@@ -61,8 +61,10 @@ public:
 
   void readFromFile(const std::string &path) {
     voc->readFromFile(path);
-    if (_verbose)
+    if (_verbose) {
       cout << "desp bytes size :" << voc->getDescSize() << endl;
+      cout << "node num: " << voc->size() << endl;
+    }
   }
 
   void saveToFile(const std::string &path) { voc->saveToFile(path); }
@@ -76,6 +78,22 @@ public:
            << training_feat_vec.cols << endl;
     word = voc->transform(training_feat_vec);
     for (auto p : word) {
+      ret[p.first] = p.second;
+    }
+    return ret;
+  }
+
+  std::map<uint32_t, std::vector<uint32_t>>
+  transform_with_feature(const cv::Mat &training_feat_vec, int level) {
+    fbow::fBow word;
+    fbow::fBow2 word_feature;
+    std::map<uint32_t, std::vector<uint32_t>> ret;
+
+    if (_verbose)
+      cout << "input size " << training_feat_vec.rows << " "
+           << training_feat_vec.cols << endl;
+    voc->transform(training_feat_vec, level, word, word_feature);
+    for (auto p : word_feature) {
       ret[p.first] = p.second;
     }
     return ret;
@@ -102,5 +120,7 @@ PYBIND11_MODULE(pyfbow, m) {
       .def("readFromFile", &Vocabulary::readFromFile, "path"_a)
       .def("saveToFile", &Vocabulary::saveToFile, "path"_a)
       .def("transform", &Vocabulary::transform, "feature"_a)
+      .def("transform_with_feature", &Vocabulary::transform_with_feature,
+           "feature"_a, "level"_a)
       .def("clear", &Vocabulary::clear);
 }
